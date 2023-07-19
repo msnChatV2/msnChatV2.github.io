@@ -1,0 +1,49 @@
+
+/* Foreground colors */
+.ThmFgColumnHeader, A.FrameLink, A.HeaderLink, A.FooterLink, A.LgtCmd, A.MSNLink {color:#FFFFFF;}
+.ThmFgTitleLightBk {color:#FF6600;}
+.ThmFgNavLink, A.NavLink, A.ChildLink:hover {color:#666699;}
+.ThmFgInactiveText, A.SystemLink {color: #666666;}
+.ThmFgFrameTitle {color: #FFFFCC;}
+.ThmFgTitleDarkBk, A.NavLink:hover, A.TitleLink {color: #CC6600;}
+.ThmFgMiscText, A.Cat, A.SubCat {color: #336699;}
+.ThmFgCommand, A.Command, A.LargeCommand, A.MsgLink {color: #003366;}
+.ThmFgHeader {color: #333333;}
+.ThmFgStandard, A.SystemLink:hover, A.SubLink, A.ChildLink, A.StdLink, SELECT.Standard {color: #000000;}
+.ThmFgDivider {color: #CCCCCC;} /* primarily for HR tags */
+
+/* Background colors */
+.ThmBgStandard {background-color: #FFFFFF;}
+.ThmBgUnknown1 {background-color: #FF6600;}
+.ThmBgFraming {background-color: #666699;}
+.ThmBgUnknown2 {background-color: #666666;}
+.ThmBgHighlightDark {background-color: #FFFFCC;}
+.ThmBgHighlightLight, #idToolbar {background-color: #FFFFE8;}
+.ThmBgTitleDarkBk {background-color: #F1F1F1;}
+.ThmBgAlternate {background-color: #ECF1F6;}
+.ThmBgUnknown3 {background-color: #CCCCFF;}
+.ThmBgDivider {background-color: #CCCCCC;}
+.ThmBgHeader {background-color: #9999CC;}
+.ThmBgLinks {background-color: #8696C9;}
+.ThmBgSharkBar {background-color: #8696C9;}
+
+/*
+     FILE ARCHIVED ON 13:22:06 Aug 08, 2002 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:28:07 Jul 19, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 803.432
+  exclusion.robots: 0.073
+  exclusion.robots.policy: 0.061
+  cdx.remote: 0.067
+  esindex: 0.009
+  LoadShardBlock: 692.579 (3)
+  PetaboxLoader3.resolve: 340.181 (4)
+  PetaboxLoader3.datanode: 365.129 (4)
+  load_resource: 281.102
+*/
