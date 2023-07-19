@@ -1,0 +1,705 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD W3 HTML//EN">	
+<HTML>
+<HEAD>
+<META NAME="keywords" CONTENT="chat, IRC, category, guest events, community, communities, MSN, Microsoft Network">
+<META HTTP-EQUIV="PICS-Label" CONTENT='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" L COMMENT "RSACi North America Server" BY "inet@microsoft.com" R (N 0 S 0 V 0 L 0))'>	
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<TITLE>MSN Chat - Home</TITLE>
+<link rel="stylesheet" href="test-css.css">
+<script language="JavaScript" src="translate.js"></script>
+<script language="JavaScript" src="server_browser_sniff.js"></script>
+<script language="JavaScript" src="helppane_ndd.js"></script>
+
+
+<script language="javascript">
+
+
+<script language="JavaScript">
+L_H_TEXT = "";
+H_FILTER = "";
+H_BRAND = "";
+L_H_APP = "MSN Chat";
+H_CONFIG = "chatv15.ini";
+H_URL_BASE = "http://help.msn.com/en_us";
+bScreen = true;
+H_TOPIC="";
+bSearch=false;
+H_BURL = "/PaneHelpFrame.msnw";
+
+H_TOPIC="ORG_ChatHomePage.htm"
+bSearch=false
+
+var catNames = new Array();
+var hexNames = new Array();
+var room = new Array();
+
+var cookie = GetCookie("mychat");
+
+function GetChatList(maxrooms)
+{
+	var i = 0;
+
+	if (maxrooms == 0)
+		maxrooms = 6;
+
+	if (cookie)
+	{
+		var len = cookie.length;
+		var pos = 1;
+		//while (pos>0 && i<len && cookie.length>1)
+		while (pos>0 && i<maxrooms && cookie.length>1)
+		{
+			//createdBy[i] = cookie.substring(0,1);
+
+			cookie = cookie.substring(1,cookie.length);
+
+			pos = cookie.indexOf("\"");
+			if (pos > 0)
+				s = cookie.substring(0,pos);
+			else
+				s = cookie.substring(pos+1,cookie.length);
+
+			//get cat name and hex name
+			catPos = s.indexOf("|");
+			if (catPos != -1)
+			{
+				room[i] = s.substring(0, catPos);
+				hexPos = s.indexOf("|", catPos+1);
+				if (hexPos == -1)
+					hexPos = cookie.length;
+
+				catNames[i] = s.substring(catPos+1,hexPos);
+				hexNames[i] = s.substring(hexPos+1,s.length);
+			}
+			else
+			{
+				room[i] = s;
+			}
+
+			i++;
+			cookie = cookie.substring(pos+1,cookie.length);
+		};
+	}
+
+	return i;
+}
+</script>
+
+<LINK HREF="chat.css" REL="stylesheet" TYPE="text/css">
+
+</HEAD>
+<BODY TOPMARGIN=0 LEFTMARGIN=0>
+<TABLE border=0 cellPadding=0 cellSpacing=0>
+<TR><TD vAlign=top width=610>
+
+<TABLE border=0 cellpadding=0 cellspacing=0 width=610 bgcolor=#336699>
+    <TR><TD height=2 colspan=15><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TD></TR>
+    <TR> 
+        <TH width=1><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TH> 
+					<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/7/" class=MSNHeaderLink target=_top>MSN Home</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            									<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/8/" class=MSNHeaderLink target=_top>Hotmail</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/A/" class=MSNHeaderLink target=_top>Search</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/9/" class=MSNHeaderLink target=_top>Shopping</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/A3/C/" class=MSNHeaderLink target=_top>Money</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/A2/B/" class=MSNHeaderLink target=_top>People & Chat</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            		        <TH width=77><A HREF="http://chat.msn.com/default.msnw?msppchlg=1&mspplogin;=http://login.passport.com/login.srf%3Flc%3D1033%26id%3D1%26ru%3Dhttp%253A%252F%252Fchat%252Emsn%252Ecom%252Fdefault%252Emsnw%26tw%3D43200%26kv%3D2%26ct%3D1004480913%26ems%3D1%26kpp%3D3%26ver%3D2.0.0248.1%26tpf%3D431e6f83df9cc3d4413ac77bdd4f44f1"><IMG SRC="signin.gif" CLASS="PassportSignIn" BORDER="0" ALT="Sign in with your Passport."/></A>		</TH>
+        <TH width=1><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TH> 
+    </TR> 
+    <TR><TD height=2 colspan=15><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TD></TR>
+</TABLE>
+
+<TABLE border=0 cellspacing=0 cellpadding=0 width=610 bgcolor=#336699>
+    <TR>
+        <TD width=140><A href="http://www.msn.html" target=_top><IMG src="logo.png" width=140 height=60 border=0 alt="Go to MSN.com"></A></TD>
+        <TD><A HREF="hotmail.html" TARGET="_top"><IMG SRC="ad1.gif" ALT="Click Here!" BORDER=0 WIDTH=468 HEIGHT=60></A>		</TD>
+    </TR>
+</TABLE>
+
+<TABLE border=0 cellPadding=0 cellSpacing=0 width=610 bgcolor=#336699>
+    <TR bgcolor=#336699><TD valign=bottom width=110><A href="default.msnw" title="Go to the MSN Chat home page."><IMG width=110 height=32 align=absmiddle src="images/chatlogo.gif" border=0></A></TD><TD valign=bottom align=left width=51><IMG src="images/sharkfin.gif" width=51 height=32></TD><TD valign=top bgcolor=#2288BB width=100%><TABLE border=0 cellpadding=0 cellspacing=0 width=100%><TR><TD><IMG border=0 height=7 width=100% src="images/top_line.gif"></TD></TR><TR><TD><font class=sharkbartitle><span id='sharkbartitle'> </span></font></TD></TR></TABLE></TD></TR>
+    <TR bgcolor=#2288BB><TD colspan=2><IMG border=0 width=161 height=6 src="images/left_top_line.gif"></TD><TD><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TD>
+    </TR>
+    <TR bgcolor=#2288BB><TD colspan=3><TABLE border=0 cellPadding=2 cellSpacing=0><TR><TD><IMG border=0 width=5 height=1 src="images/c.gif"></TD><TD><A class="HeaderLink" href="default.msnw" title="Go to the MSN Chat home page.">Chat Home</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD><TD><A class="HeaderLink" href="/create.msnw" title="Create your own private chat room.">Create a Room</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD><TD><A class="HeaderLink" href="/join.msnw" title="Join a specific chat room or get started in one of our featured rooms.">Join a Chat</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD><TD><A class="HeaderLink" href="/friend.msnw" title="Find out if a friend is chatting right now.">Find a Friend</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD>                    <TD><A class="HeaderLink" href="feature.msnw?id=MSNLiveHome" title="Chat with special guests in our Event chat room.">Celebrity Chats</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD>                    <TD><A class="HeaderLink" href="javascript:DoHelp(); void('');" title="Get instructions and tips for using MSN Chat.">Help</A></TD>                </TR></TABLE></TD></TR>
+    <TR bgcolor=#336699 height=1><TD colspan=3><IMG border=0 height=1 width=100% src="images/c.gif"></TD></TR>
+</TABLE>
+
+<table border=0 cellpadding=0 cellspacing=0 width=610>
+<tr valign=top>
+  <td width=10 bgColor="#ffffcc"><IMG height=1 width=10 src="images/pixel1x1.gif" border=0 ALT=""><img width=1 height=1 border=0 alt="" src="http://c.msn.com/c.gif?PI=11890&DI;=341&NC;=9519&NA;=1148&PS;=9468"></TD>
+  <td bgcolor="#ffffcc">
+	<table border=0 cellspacing=0 cellpadding=0 width=145>
+	<tr>
+		<td bgColor="#ffffcc"><IMG height=1 width=10 src="images/pixel1x1.gif" border=0 ALT=""></TD>
+		<td valign=top>
+	
+				 <table border=0 cellspacing=0 cellpadding=0 width=131 valign=top>
+		  <tr>
+			<td height=5></td>
+		  </tr>
+		  <tr>
+			<td class=lefttext><A href="profile.msnw?edit=1">Edit My Profile</A></td>
+		  </tr>
+		  <tr>
+			<td height=2></td>
+		  </tr>
+		  <tr>
+			<td class=lefttext><A href="changenick.msnw">Change My Nickname</A></td>
+		  </tr>	  
+		  <tr>
+			<td height=2></td>
+		  </tr>
+		  <tr>
+			<td class=lefttext><A href="settings.msnw">My Settings</A></td>
+		  </tr>
+		  <tr>
+			<td height=2></td>
+		  </tr>
+		  <tr>
+			<td class=lefttext><A href="conduct.msnw">Code of Conduct</A></td>
+		  </tr>
+		  <tr>
+			<td class=lefttitle>
+				<img SRC="images/pixel1x1.gif" width=1 height=3 ALT=""><br>
+				My Chats
+			</td>
+		  </tr>
+		  <tr>
+			<td><img src="images/blueline.jpg" width=134 height=1 ALT=""></td>
+		  </tr>
+		  <tr>
+			<td height=2></td>
+		  </tr>
+		  <tr>
+			<td colspan=2>
+				<table width=130 border=0 cellpadding=0 cellspacing=0 valign=middle>
+				<tr>
+					<td height=2></td>
+				</tr>
+				<tr>
+					<td><img src="images/ftl.jpg" width=4 height=4 ALT=""></td>
+					<td background="images/ftm.jpg" width='100%'><img SRC="images/pixel1x1.gif" width="100%" height=4 ALT=""></td>
+					<td><img src="images/ftr.jpg" width=4 height=4 ALT=""></td>
+				</tr>
+				<tr>
+					<td background="images/fl.jpg"><img SRC="images/pixel1x1.gif" width=4 height="100%" ALT=""></td>
+					<td bgcolor="#ffffff" class=favdesc>
+					<script language=JavaScript>
+				
+				var chatList = '';
+				if (cookie)
+				{	
+					var NumRooms = GetChatList(6);
+
+					chatList = '';
+
+					if (NumRooms)
+					{
+						var strEncodedURL = '';
+						for (var i=0; i<NumRooms; i++)
+						{
+							strEncodedURL = '';
+							if (room[i])
+							{
+								s = unescape(room[i]);
+								s = (s.length>20 ? s.substring(0, 20)+"..." : s);
+								psignPos = s.indexOf("%23");
+								if (psignPos >= 0)
+									s = s.substring(psignPos+3, s.length);
+
+								strEncodedURL = escape(room[i]);
+								if (strEncodedURL.indexOf("%u") != -1)
+									strEncodedURL = escape(strEncodedURL);
+							}
+							else
+							{
+								if (hexNames[i])
+								{
+									s = DecodeHexName(hexNames[i]);
+
+									if (s)
+									{
+										if (s.substring(0, 2) == '%#')
+											s = s.substring(2, s.length);
+									}
+								}
+							}
+
+							chatList += "<a href='chatroom.html?";
+
+							var c = '';
+							if (strEncodedURL)
+							{
+								chatList += "rm="+strEncodedURL;
+								c = '&';
+							}
+
+							if (catNames[i])
+							{
+								chatList += (c + "cat=" + catNames[i]);
+								c = '&';
+							}
+
+							if (hexNames[i])
+								chatList += (c + "rhx=" + hexNames[i]);
+
+							chatList += "'>"+s+"</a><br>";
+						};
+					}
+
+					chatList += '<br>';
+					chatList += "<A href='/soon.html'><b>View and Edit list ...</b></A>";
+					chatList += '';
+				}
+				else
+				{
+					chatList += "List your favorite chats here. Go to the chat room and click 'Add to My Chats'";
+				}
+				document.write(chatList);
+				</script>
+					
+					</td>
+					<td background="images/fr.jpg"><img SRC="images/pixel1x1.gif" width=4 height="100%" ALT=""></td>
+				</tr>
+				<tr>
+					<td><img src="images/fbl.jpg" width=4 height=4 ALT=""></td>
+					<td background="images/fbm.jpg" width='100%'><img SRC="images/pixel1x1.gif" width="100%" height=4 ALT=""></td>
+					<td><img src="images/fbr.jpg" width=4 height=4 ALT=""></td>
+				</tr>
+				<tr>
+					<td height=2></td>
+				</tr>
+				</table>
+			</td>
+		  </tr>
+		  
+		  <script language="javascript">
+<!--
+
+function GotoNewsletters( nNID )
+{
+	var strURL;
+	var strPARAMS;
+
+	//alert(document.Newsform.show);
+	if (document.Newsform.show[0].checked)
+		nNID = "5";
+	else
+		nNID = "4";
+		
+	//alert(nNID);
+	strURL = "http://newsletters.msn.com/home.asp?NID=" + nNID;
+	strPARAMS = "left=100,top=50,height=400,width=680" +
+				"resizable=yes,toolbar=yes,status=yes," +
+				"menubar=yes,location=yes,scrollbars=yes";
+				
+	window.open( strURL, null, strPARAMS );
+} 
+
+//-->
+</script>
+ 
+		  		  <tr>
+			<td class="lefttitle">
+				<IMG height=13 alt="" src="images/pixel1x1.gif" width=1><br>
+				Also On MSN </TD></TR>
+  		  <tr>
+			<td height="6"><IMG height=1 alt="" src="images/blueline.jpg" width=134></td>
+		  </tr>
+		  <tr>
+			<td class="lefttext"><A href="webmessenger.html">MSN webMessenger</A></td>
+		  </tr>
+		  <tr>
+			<td height="2"></td>
+		  </tr>
+		  <tr>
+			<td class="lefttext"><A href="soon.html">My Photo Center</A></td>
+		  </tr>
+		  <tr>
+			<td class="lefttext"><A href="soon.html">Hear Music</A></td>
+		  </tr>
+		  <tr>
+			<td height="2"></td>
+		  </tr>
+ <tr>
+			<td class="lefttext"><A href="soon.html">Tech & Gadgets</A></td>
+		  </tr>
+		  <tr>
+			<td height="12"></td>
+		  </tr>
+		 
+	<tr>
+			<td class="lefttitle">
+				<IMG height=3 alt="" src="images/pixel1x1.gif" width=1><br>
+				Hot Buys
+			</td>
+		  </tr>
+  		  <tr>
+			<td height="6"><IMG height=1 alt="" src="images/blueline.jpg" width=134></td>
+		  </tr>	  
+
+<tr><td valign="top">
+<table cellpadding=0 cellspacing=0 border=0 width=125><br>
+	<tr><td valign=top align=middle><SCRIPT language = "JavaScript">
+<!-- //
+var EshopOfferHTML = '';
+// -->
+</SCRIPT>
+<SCRIPT language = "JavaScript" src="test.aspx">
+</SCRIPT>
+<SCRIPT language = "JavaScript">
+<!-- //
+if (EshopOfferHTML != '') 
+document.write(EshopOfferHTML); 
+else 
+document.write('<A href="soon.html"><FONT size="1" family="Verdana">MSN Shopping</FONT></A>'); 
+// -->
+</SCRIPT>
+</td></tr>
+	
+	
+</table>
+</td></tr>
+ 
+		 </table>
+	
+		</td>
+	</tr>
+	</table>
+  </td>
+  <td width=7 bgColor=#ffffcc><IMG height="100%" width=7 src="images/pixel1x1.gif" border=0 ALT=""></TD> 
+  <td width=4 bgColor=#efeec0><IMG height="100%" width=4 src="images/pixel1x1.gif" border=0 ALT=""></TD>
+  <td vAlign=top width=435>
+			<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=unicode"> 
+<LINK href="features/features.css" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY> 
+<table border=0 cellspacing=0 cellpadding=0 width=443>
+	
+	<tr>
+		<td>
+			<table cellpadding=0 cellspacing=0 bgcolor=#3399cc width=437>
+				
+				<tr>
+					
+					<td colspan=2><!--  default_MainHighlight_content  -->
+<table cellpadding=3 cellspacing=0 border=0 valign="top" class="featureBackground" width=438>
+	<tr>
+		<td width=90><A href="http://go.msn.com/ZZM/A0/1.asp?target=http://chat.msn.com/chatroom.msnw?rm=Windows+XP"><IMG align=right height=70 width=90 SRC="xp.gif" ALT="Windows XP" border 
+      =0></A></td>
+		<td class="livecomment" width=120>What are people saying about the new Windows XP? <A href="http://go.msn.com/ZZM/A0/1.asp?target=http://chat.msn.com/chatroom.msnw?rm=Windows+XP">Find out!</A></td>
+		<td>
+								<IMG height=73 src="features/images/featuresbar.jpg" width=1>
+							</td>
+		<td>
+			<table>
+				<tr>
+					<td width=65><A href="http://go.msn.com/ZZM/A0/2.asp?target=http://chat.msn.com/msnlive_feature.msnw?id=artist/sylviabrowne_oct2001" 
+                       ><IMG SRC="http://chat.msn.com/features/images/65x60/sylviabrowne_b_65x60.gif" valign="top" width=65 height=60 border=0 ALT="Sylvia Browne" style  ="WIDTH: 65px"></A></td>
+					<td class="livecomment" width=120>Ask psychic <A href="http://go.msn.com/ZZM/A0/2.asp?target=http://chat.msn.com/msnlive_feature.msnw?id=artist/sylviabrowne_oct2001" 
+                       >Sylvia Browne</A> about your future 
+                        Tuesday night 9pm ET. 
+              </FONT></td>
+				</tr>						
+			</table>
+		</td>
+	</tr>
+</table><!-- / default_MainHighlight_content  -->
+						
+					</td>
+					<td width=6 background="features/images/featurer.gif"><IMG src="features/images/spacer.gif"></td>					
+				</tr>
+				<tr>
+					<td><IMG height=6 alt="" src="features/images/featurebl.gif" width=6></td>
+					<td height=1 background="features/images/featurebm.gif"><IMG src="features/images/spacer.gif"></td>
+					<td><IMG height=6 alt="" src="features/images/featurebr.gif" width=6></td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=0 width=438>
+				<tr>
+					<td><!--  default_CategoryList_content-->
+
+<table cellpadding=0 cellspacing=0 width=438>
+	<tr>
+		<td rowspan=8 width=4></td>
+		<td height=5 colspan=2></td>
+	</tr>
+	<tr valign=bottom>
+		<td><span class="dirtitle"><A href="http://go.msn.com/ZZM/A0/3.asp?target=http://chat.msn.com/chatroom.msnw?rm=TheLobby&cat=GN" >Start Chatting Here!</A></span></td>
+		<td align=right><span class="bodytextsmallhighlight"><IMG height=10 alt="" src="features/images/Popleft.gif" width=7 border=0>       <IMG height=10 alt="" src="features/images/Popright.gif" width=7 border=0></span><span class="dirpopular"> = popular chat rooms</span></td>
+	</tr>
+
+	<tr valign=top>
+		<td colspan=2><span class="dirblurb">Click any of the rooms below.</span></td>
+		
+	</tr>
+	<tr valign=bottom>
+		<td height=5 colspan=2><hr></td>
+	</tr>
+	<tr>
+		<td colspan=2><span class="dirfeaturedlabel">Featured rooms:</span>
+					  <span class="dirsubcategory">  <IMG src="features/images/orangebullet.gif">  
+							<A href="http://go.msn.com/ZZM/A0/4.asp?target=http://chat.msn.com/chatroom.msnw?rm=TheLobby&cat=GN">The Lobby</A>
+					    <IMG src="features/images/orangebullet.gif">  
+							<A href="http://go.msn.com/ZZM/A0/5.asp?target=http://chat.msn.com/chatroom.msnw?rm=TV" 
+                 >Television</A>
+					    <IMG src="features/images/orangebullet.gif">  
+							<A class=bodytextsmallhighlight href="http://go.msn.com/ZZM/A0/6.asp?target=http://chat.msn.com/chatroom.msnw?rm=Headlines" ><IMG height=10 alt="" src="features/images/Popleft.gif" width=7 border=0>Latest News<IMG height=10 alt="" src="features/images/Popright.gif" width=7 border=0></A>   <!--<IMG src="features/images/orangebullet.gif">  
+							<A href="http://go.msn.com/ZZM/A0/7.asp?target=http://chat.msn.com/chatroom.msnw?rm=DiscoDaze&cat=mu" >Disco Daze</A>-->
+					  </span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan=2 height=5></td>
+	</tr>
+	<tr valign=top>
+		<td>
+			<table cellpadding=0 cellspacing=0 border=0>
+				<tr>
+					<td valign=top>
+					<span class="dircategory"><A href="http://go.msn.com/ZZM/A0/8.asp?target=http://Chat.msn.com/feature.msnw?id=categories/romance%26nsb=1">Romance</A></span><br>
+					<span class="dirsubcategory"><A href="http://go.msn.com/ZZM/A0/9.asp?target=http://chat.msn.com/chatroom.msnw?rm=AfterHours&cat=RM" >After Hours</A>,
+					<A class=bodytextsmallhighlight href="http://go.msn.com/ZZM/A0/10.asp?target=http://chat.msn.com/chatroom.msnw?rm=BlindDate&cat=RM" ><IMG height=10 alt="" src="features/images/Popleft.gif" width=7 border=0>Blind Date<IMG height=10 alt="" src="features/images/Popright.gif" width=7 border=0></A>, 
+					<A href="http://go.msn.com/ZZM/A0/11.asp?target=http://chat.msn.com/chatroom.msnw?rm=LoveShack&cat=RM">Love Shack,</A> 
+					<A href="http://go.msn.com/ZZM/A0/12.asp?target=http://chat.msn.com/chatroom.msnw?rm=Rendezvous&cat=RM" >Rendezvous</A>,</span> 
+					<span class="dirsubcategorymore"><A href="http://go.msn.com/ZZM/A0/13.asp?target=http://chat.msn.com/find.msnw?cat=RM">more...</span></A><br><br>
+					</td></tr><tr><td valign=top>
+					<span class="dircategory"><A href="http://go.msn.com/ZZM/A0/14.asp?target=http://Chat.msn.com/feature.msnw?id=categories/teen%26nsb=1">Teen</A></span><br>
+					<span class="dirsubcategory"><A href="http://go.msn.com/ZZM/A0/15.asp?target=http://chat.msn.com/chatroom.msnw?rm=Teens&cat=TN">Teens</A>, 
+					<A href="http://go.msn.com/ZZM/A0/16.asp?target=http://chat.msn.com/chatroom.msnw?rm=TeenKickbackCafe&cat=TN" >Kickback Cafe</A>, 
+					<A href="http://go.msn.com/ZZM/A0/17.asp?target=http://chat.msn.com/chatroom.msnw?rm=TeenMusic&cat=TN" >Teen Music</A>,<br>
+					<A class=bodytextsmallhighlight href="http://go.msn.com/ZZM/A0/18.asp?target=http://chat.msn.com/chatroom.msnw?rm=TeenParty&cat=TN" ><IMG height=10 alt="" src="features/images/Popleft.gif" width=7 border=0>Teen Party<IMG height=10 alt="" src="features/images/Popright.gif" width=7 border=0></A></span>, 
+					<span class="dirsubcategorymore"><A href="http://go.msn.com/ZZM/A0/19.asp?target=http://chat.msn.com/find.msnw?cat=TN">more...</span></A><br><br>
+					</td></tr><tr><td valign=top>
+					<span class="dircategory"><A href="http://go.msn.com/ZZM/A0/20.asp?target=http://Chat.msn.com/feature.msnw?id=categories/lifestyles%26nsb=1">Lifestyles</A></span><br>
+					<span class="dirsubcategory"><A href="http://go.msn.com/ZZM/A0/21.asp?target=http://chat.msn.com/chatroom.msnw?rm=Kalahari&cat=LF" >African American</A>, 
+					<A href="http://go.msn.com/ZZM/A0/24.asp?target=http://chat.msn.com/chatroom.msnw?rm=HispanicAmerican&cat=LF" >Hispanic</A>,
+					<A href="http://go.msn.com/ZZM/A0/22.asp?target=http://chat.msn.com/chatroom.msnw?rm=AsianAmerican&cat=LF" >Asian</A>, 
+					<A href="http://go.msn.com/ZZM/A0/23.asp?target=http://chat.msn.com/chatroom.msnw?rm=Men4Men&cat=LF" >Gay</A></span>, 
+					<span class="dirsubcategorymore"><A href="http://go.msn.com/ZZM/A0/25.asp?target=http://chat.msn.com/find.msnw?cat=LF">more...</span></A><br><br>
+					</td></tr></table>
+					
+		</td>
+		<td>
+								<table cellpadding=0 cellspacing=0 border=0>
+									<tr>
+										<td valign=top>
+								<span class="dircategory"><A href="http://go.msn.com/ZZM/A0/26.asp?target=http://Chat.msn.com/feature.msnw?id=categories/citychat%26nsb=1">City Chats</A></span><br>
+								<span class="dirsubcategory"><A href="http://go.msn.com/ZZM/A0/27.asp?target=http://chat.msn.com/chatroom.msnw?rm=ChatWashingtonDC&cat=GE" >Washington D.C.</A>, 
+								<A href="http://go.msn.com/ZZM/A0/28.asp?target=http://chat.msn.com/chatroom.msnw?rm=ChatChicago&cat=GE" >Chicago</A>, 
+								<A class=bodytextsmallhighlight href="http://go.msn.com/ZZM/A0/29.asp?target=http://chat.msn.com/chatroom.msnw?rm=ChatNewYork&cat=GE" ><IMG height=10 alt="" src="features/images/Popleft.gif" width=7 border=0>New York<IMG height=10 alt="" src="features/images/Popright.gif" width=7 border=0></A>, 
+								<A href="http://go.msn.com/ZZM/A0/30.asp?target=http://chat.msn.com/chatroom.msnw?rm=ChatLasVegas&cat=GE" >Las Vegas</A>, 
+								<A href="http://go.msn.com/ZZM/A0/31.asp?target=http://chat.msn.com/chatroom.msnw?rm=ChatSeattle&cat=GE" >Seattle</A></span>, 
+								<span class="dirsubcategorymore"><A href="http://go.msn.com/ZZM/A0/32.asp?target=http://chat.msn.com/find.msnw?cat=GE">more...</span></A><br><br>
+								</td></tr><tr><td valign=top>
+								<span class="dircategory"><A 
+            href="http://go.msn.com/ZZM/A0/40.asp?target=http://Chat.msn.com/feature.msnw?id=categories/peers%26nsb=1">Peers</A></span><BR><SPAN 
+            class=dirsubcategory><A  
+            href="http://go.msn.com/ZZM/A0/41.asp?target=http://chat.msn.com/chatroom.msnw?rm=20s&cat=PR">20's Plus</A>, <A 
+            href="http://go.msn.com/ZZM/A0/42.asp?target=http://chat.msn.com/chatroom.msnw?rm=30s&cat=PR">30's 
+            Plus</A>, <A class=bodytextsmallhighlight
+            
+                        href="http://go.msn.com/ZZM/A0/43.asp?target=http://chat.msn.com/chatroom.msnw?rm=40s&cat=PR" 
+                       ><IMG 
+            height=10 alt="" src="features/images/Popleft.gif" width=7 
+            border=0>40's 
+            Plus<IMG height=10 alt="" 
+            src="features/images/Popright.gif" width=7 border=0></A>, <BR><A 
+            href="http://go.msn.com/ZZM/A0/44.asp?target=http://chat.msn.com/chatroom.msnw?rm=50s&cat=PR">50's 
+            Plus</A>, <A 
+            href="http://go.msn.com/ZZM/A0/45.asp?target=http://chat.msn.com/chatroom.msnw?rm=60sPlus&cat=PR">60's 
+            Plus</A></SPAN>, <SPAN class=dirsubcategorymore><A 
+            href="http://go.msn.com/ZZM/A0/46.asp?target=http://chat.msn.com/find.msnw?cat=PR">more...</SPAN></A><BR></SPAN><br>
+								</td></tr>
+
+<tr><td valign=top>
+								<span class="dircategory"><A href="http://go.msn.com/ZZM/A0/40.asp?target=http://chat.msn.com/find.msnw?cat=SP">Sports</A></span><br>
+								<span class="dirsubcategory"><A href="http://go.msn.com/ZZM/A0/41.asp?target=http://chat.msn.com/chatroom.msnw?&rm=baseball" 
+                       >Baseball</A>, 
+								<A class=bodytextsmallhighlight href="http://go.msn.com/ZZM/A0/42.asp?target=http://chat.msn.com/chatroom.msnw?&rm=profootball" 
+                       ><IMG height=10 alt="" src="features/images/Popleft.gif" width=7 border=0>Football<IMG height=10 alt="" src="features/images/Popright.gif" width=7 border=0></A>, 
+								<A href="http://go.msn.com/ZZM/A0/43.asp?target=http://chat.msn.com/chatroom.msnw?&rm=basketball" 
+                       >Basketball</A>, <br><A href="http://go.msn.com/ZZM/A0/44.asp?target=http://chat.msn.com/chatroom.msnw?&rm=soccer" 
+                       >Soccer</A>,
+								<A href="http://go.msn.com/ZZM/A0/45.asp?target=http://chat.msn.com/chatroom.msnw?&rm=hockey" 
+                       >Hockey</A></span>, <span class="dirsubcategorymore"><A href="http://go.msn.com/ZZM/A0/46.asp?target=http://chat.msn.com/find.msnw?cat=SP">more...</span></A><br><br>
+								</td></tr>
+
+
+</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=2 class="dirmc">
+								
+								<span class="dirmclabel">More Categories:</span> 
+								<span class="dirmcorange"><A href="http://go.msn.com/ZZM/A0/47.asp?target=http://chat.msn.com/find.msnw?cat=CP">Computing</A></span>,
+								<A href="http://go.msn.com/ZZM/A0/48.asp?target=http://chat.msn.com/find.msnw?cat=EA">Entertainment</A>, 
+								<span class="dirmcgreen"><A href="http://go.msn.com/ZZM/A0/49.asp?target=http://chat.msn.com/find.msnw?cat=GN">General</A></span>,
+								<A href="http://go.msn.com/ZZM/A0/50.asp?target=http://chat.msn.com/find.msnw?cat=II">Interests</A>,
+								<span class="dirmcbrown"><A href="http://go.msn.com/ZZM/A0/51.asp?target=http://chat.msn.com/find.msnw?cat=NW">News</A></span>, 
+								<A href="http://go.msn.com/ZZM/A0/52.asp?target=http://chat.msn.com/find.msnw?cat=RL">Religion</A>, </SPAN>					 
+								<span class="dirmcgreen"><A href="http://go.msn.com/ZZM/A0/47.asp?target=http://chat.msn.com/find.msnw?cat=MU">Music</A></span>
+								
+								<br><br>
+							</td>
+						</tr>
+ </table><!--  /default_CategoryList_content-->
+					</td>
+				</tr>
+
+				<tr>
+					<td><!--default_createChatroom_content-->
+					<table cellpadding=0 cellspacing=0 width=438 bgcolor=#f4f4f4>
+							<tr>
+								<td colspan=2 height=10></td>
+							</tr>
+							<tr>
+								<td rowspan=2 width=70 align=middle><IMG height=44 alt="It's easy to create your own chat room!" src ="features/images/123.gif" width=57 ></td>
+								<td><span class="dirtitle">
+									<a href="http://go.msn.com/ZZM/A0/59.asp?target=http://chat.msn.com/create.msnw">Create Your Own Chat Room</a></span>
+								</td>
+							</tr>
+							<tr>
+								<td class=promotext>
+									Want to a 
+									place to chat with friends? It's as easy as 1-2-3 to create your own chat room! <font class=promosubtitle><A href="http://go.msn.com/ZZM/A0/60.asp?target=http://chat.msn.com/create.msnw" title="It's easy to create your own chat room!">Click here</A></font>      to get started.
+								</td>
+							</tr>
+							<tr>
+								<td colspan=2 height=10></td>
+							</tr>
+						</table><!--/default_createChatroom_content-->
+					</td>
+				</tr>
+				<tr>
+					<td><!--default_bottompromo_content--><scriptlanguage="JAVASCRIPT">
+ 
+
+<table cellpadding=3 cellspacing=0 border=0 width=438>
+	<tr>
+		<td height=49 width=63><IMG height=49 alt="Hot Chats" src="features/images/hot_chat.jpg" width=61 ></td>
+		<td height=49 class=promotitle width=147>Hot Chats</td>
+		<td height=49 width=8 rowspan=3 valign=center align=left><IMG src="features/images/vert_rule.gif"></td>
+		<td height=49 width=45><IMG alt="Newsletter sign-up" src ="features/images/signup.gif" border=0 ></td>
+		<td width=65 valign=center class=promotitle> </td>
+	</tr>
+	<tr>
+		<td colspan=2 class=promotext width=210 valign=top>
+			<font class=promosubtitle><A href="http://go.msn.com/ZZM/A0/54.asp?target=http://chat.msn.com/chatroom.msnw?rm=TheLobby">New to Chat?</A></font><br>
+			Check out The 
+			Lobby. It's a great  place to start making new friends online.</td>
+		<td colspan=2 class="promotext" valign=top><form method="post" action="http://www.listbot.com/cgi-bin/subscriber" id=Newsform name=Newsform>
+			<input type="hidden" name="show" value="WC" CHECKED>
+			<input type="hidden" name="show" value="UW">
+			<font class=promosubtitle><A href="http://chat.msn.com/newsletters/about.htm">Never miss a celebrity chat.</A></font>
+			Get advance listings of upcoming events delivered to your inbox.</td></FORM>
+	</tr>
+	<tr>
+		<td colspan=2 class=promotext width=210 valign=top>
+			<font class=promosubtitle><A href="http://go.msn.com/ZZM/A0/55.asp?target=http://chat.msn.com/chatroom.msnw?rm=helpdesk">Need Help?</A></font><br>
+			Live support for MSN chat issues is a click away in Help Desk.</td>
+		<td colspan=2 class=promotext valign=top>			<form method="post" action="http://www.listbot.com/cgi-bin/subscriber" id=Newsform2 name=Newsform2>
+			<input type="hidden" name="show" value="WC">
+			<input type="hidden" name="show" value="UW" CHECKED>
+			<font class=promosubtitle><A href="http://chat.msn.com/newsletters/about.htm">Explore MSN Communities.</A></font>
+			Meet people who share your passions.</td>
+	</tr>
+</table></FORM><!--/default_bottompromo_content-->
+					 
+ 					</td>
+				</tr>
+			</table>
+		</td>
+	  </tr>
+	  </table></BODY></HTML>
+		</TD>		
+  <td width=9>
+  </td>
+</tr>
+<tr>
+	<td colspan=4 bgColor=#efeec0><IMG height=4 width="100%" src="images/pixel1x1.gif" border=0 ALT=""><img src="/popupad/adGUID.asp" width=1 height=1 border=0></TD>
+	<td colspan=2 height=3></TD>  
+</tr>
+<tr>
+	<td colspan=6 height=3 bgColor=#ffffff></TD>
+</tr>
+<tr>
+	<td colspan=6>
+	<TABLE border=0 cellPadding=0 cellSpacing=0 width=610>
+    <TR bgcolor=#336699><TD colspan=4><TABLE border=0 cellPadding=2 cellSpacing=0><TR><TD><IMG border=0 width=5 height=1 src="images/c.gif"></TD><TD><A class="HeaderLink" href="default.msnw" title="Go to the MSN Chat home page.">Chat Home</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD><TD><A class="HeaderLink" href="create.msnw" title="Create your own private chat room.">Create a Room</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD><TD><A class="HeaderLink" href="join.msnw" title="Join a specific chat room or get started in one of our featured rooms.">Join a Chat</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD><TD><A class="HeaderLink" href="friend.msnw" title="Find out if a friend is chatting right now.">Find a Friend</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD>				    <TD><A class="HeaderLink" href="feature.msnw?id=MSNLiveHome" title="Chat with special guests in our Event chat room.">Celebrity Chats</A></TD><TD align=center width=10><IMG height=15 width=1 src="images/y1x1.gif"></TD>                    <TD><A class="HeaderLink" href="javascript:DoHelp(); void('');" title="Get instructions and tips for using MSN Chat.">Help</A></TD>                </TR></TABLE></TD></TR>
+</TABLE>
+	</td>
+</tr>
+</table>
+<TABLE border=0 cellspacing=0 cellpadding=0 width=610 bgcolor=#4377AB>
+    <TR><TD bgcolor=#4377AB colspan=13 align=left>
+        <A href="http://www.msn.com" target=_top><IMG src="images//partnerlogos//logo_min.gif" width=118 height=40 border=0 alt="Go to MSN.com"></A><FONT class=MakeHome>Make It Your Home</FONT>
+    </TD></TR>
+    <TR><TD bgcolor=#4377AB colspan=13 height=10 bgcolor=#4377AB><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TD></TR>
+    <TR>
+        <TH width=1><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TH>
+					<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/7/" class=MSNHeaderLink target=_top>MSN Home</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            		        					<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/8/" class=MSNHeaderLink target=_top>Hotmail</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/A/" class=MSNHeaderLink target=_top>Search</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/AD/9/" class=MSNHeaderLink target=_top>Shopping</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/A3/C/" class=MSNHeaderLink target=_top>Money</A></FONT></TH> 
+            			<TH width=1><img src="/images/separator.gif" width=2 height=13></TH>
+            							<TH><FONT class=MSNHeaderLink><A href="http://go.msn.com/A2/B/" class=MSNHeaderLink target=_top>People & Chat</A></FONT></TH> 
+            		        <TH width=77><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TH>
+    </TR>
+    <TR><TD bgcolor=#4377AB colspan=13 height=10 bgcolor=#4377AB><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></TD></TR>
+</TABLE>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=610 HEIGHT=40>
+    <TR>
+        <TD bgColor=#2288BB height=25><FONT color=#FFFFFF face="Tahoma" style="font-size:8pt">  </FONT></TD>
+        <TD bgColor=#2288BB height=25><FONT color=#FFFFFF face="Tahoma" style="font-size:8pt">©2001 Microsoft Corporation. All rights reserved.</FONT></TD>
+        <TD bgColor=#2288BB height=25><FONT color=#FFFFFF face="Tahoma" style="font-size:8pt">  </FONT></TD>
+        <TD bgColor=#2288BB height=25><A class=FooterLink target=_top href="http://go.msn.com/A3/4/">Terms of Use</A></TD>
+        <TD bgColor=#2288BB height=25>  </TD>
+        <TD bgColor=#2288BB height=25><A class=FooterLink target=_top href="http://go.msn.com/A3/5/">Advertise</A></TD>
+        <TD bgColor=#2288BB height=25>  </TD>
+        <TD bgColor=#2288BB height=25><A class=FooterLink target=_top href="http://go.msn.com/A3/6/">TRUSTe Approved Privacy Statement</A></TD>
+    </TR>
+</TABLE>
+</TD>
+	<TD valign=top>
+        <table border=0 cellspacing=0 cellpadding=0 width=160 style="padding-left:7px" bgcolor=#336699>
+        <tr><td height=30><IMG height=1 width=1 src="images/pixel1x1.gif" border=0></td></tr>
+        <tr><td><font class="MSNHeaderLink">Search the Web</font></td></tr>
+            <tr>
+                <td height=47 valign=top>
+
+                    <div style="position:absolute">
+                        <form method="GET" name="websearch" action="soon.html" style="margin-bottom:0px;margin-bottom:0px;">
+                            <input type="Hidden" name="RS" value="CHECKED"> 
+                            <input type="Hidden" name="Form" value="AD"> 
+                            <input type="Hidden" name="v" value=1>
+                            <input type="hidden" name="cp" value="1252" />
+                            <input type="text" name="q" size=13 accesskey="S" style="width:120px;">
+                            <input type="image" vspace=0 hspace=0 src="searchgo.gif" border=0 alt="Begin your Web search" style="position:absolute;left:90;top:-2">                            
+                        </form>
+                    </div>
+                </td>
+            </tr>
+    </table>
+	<iframe bgcolor=#336699 id=sidebar src="http://arc1.msn.com/ADSAdClient31.dll?GetAd?PG=PROCHT?SC=D1" border=0 frameborder=0 scrolling=no marginheight=0 marginwidth=0 width=160 height=600> <a href="http://arc1.msn.com/Clicker/ADSClicker31.dll?Redirect?PG=PROCHT?AN=1.0"><img src="http://arc1.msn.com/ADSAdClient31.dll?GetImage?PG=PROCHT?AN=1.0" width=160 height=600 border=0></a></iframe>
+	</td>
+
+</TR></TABLE>
+
+
+</BODY>
+</HTML>

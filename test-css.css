@@ -1,0 +1,119 @@
+body{font:9pt arial;background-color:#ffffff;}
+.navLinkExt{color:#003333;font:9pt arial;font-weight:bold;}
+A.navLinkExt:hover {color:#ff9933;font:9pt arial;font-weight:bold;}
+.navLink{color:#000066;font:10pt arial;font-weight:bold;}
+A.navLink:hover {color:#ffffff;font:10pt arial;font-weight:bold;}
+
+.blacktext{color:#000000;font:10pt arial;font-weight:bold;text-decoration:none;}
+
+.navLinkCurrent{color:#FF6600;font:11pt arial;font-weight:bold;text-decoration:none;}
+.navLinkCurrentNew{color:#003333;font:10pt arial;font-weight:bold;text-decoration:none;}
+.horBar{color:#ffffff;font:9pt arial;text-decoration:none;font-weight:bold;background-color:#333366;}
+A.horBar:hover{color:#ffffff;font:9pt arial;text-decoration:none;font-weight:bold;}
+.horBarSlt{color:#FFFFFF;font:9pt arial;text-decoration:none;font-weight:bold;}
+.pageTitle{font:18pt arial;font-weight:bold;color:ff6600;}
+.pageTitle2{font:12pt arial;font-weight:bold;color:000000;}
+.pageTitle3{font:12pt arial;font-weight:bold;color:ff6600;}
+.catLink{color:#336666;font:9pt arial;font-weight:bold;text-decoration:none;}
+A.catLink:hover {color:#ff9933;}
+.bodyLink{color:#336666;font:9pt arial;font-weight:bold;text-decoration:underline;}
+A.bodyLink:hover {color:#ff9933;}
+.bodyText{font:9pt arial;color:#003333}
+.bodyEm{font:10pt arial;color:#669999;font-weight:bold}
+.bodyTextSmall{font-family:arial;color:#000066;}
+A.bodyTextSmall:hover {color:#FF9933;}
+
+.bodyHighlight{color:#ffffcc;font:10pt arial;font-weight:bold;text-decoration:none;}
+.ChatTitle{color:#000066;font:16pt arial;font-weight:bold;text-decoration:none;}
+.ChatFindTitle{color:#000066;font:16pt helvetica;font-weight:bold;text-decoration:none;}
+
+.CategoryLinks{font-family:arial;color:#000066;font-weight:bold}
+A.CategoryLinks:hover {color:#FF9933;}
+.bodyTextSmallHighlight{font-family:arial;color:#000066;background:#FFFFCC;}
+A.bodyTextSmallHighlight:Hover{color:#9999CC;}
+
+
+.bodyTextSmaller{font:7pt arial}
+.formElem{font:9pt arial;font-weight:bold;color:#000000}
+.formElemOptional{font:7pt arial;color:#000000}
+.bodyLinkSmall{color:#000066;font:8pt arial;font-weight:bold;text-decoration:underline;}
+A.bodyLinkSmall:hover {color:#ff9933;}
+.bodyLinkSmallPlain{color:#336666;font:8pt arial;font-weight:bold;text-decoration:none;}
+A.bodyLinkSmallPlain:hover {color:#9999CC;}
+
+.vernavLink{color:#000066;font:10pt arial;font-weight:bold;text-decoration:none;}
+A.vernavLink:Hover{color:#FFFFFF;font:10pt arial;font-weight:bold;text-decoration:none;}
+TD{font:9pt arial;color:#000000}
+.bignumber{color:#9999CC;font:32pt arial;font-weight:bold;text-decoration:none;}
+
+.bodyLinkSmaller{color:#336666;font:7pt arial;font-weight:bold;text-decoration:underline;}
+A.bodyLinkSmaller:hover {color:#ff9933;}
+.tableHead{font-family:arial;font-weight:bold;color:#000000}
+.tableText{font-family:arial;color:#666666}
+.tableLink{font-family:arial;color:#333333;text-decoration:none}
+.roomNameLink{font-family:arial;color:#333333;font-weight:bold;text-decoration:underline;}
+
+.pageLink{color:#336666;font-family:arial;text-decoration:underline;}
+A.pageLink:hover {color:#ff9933;}
+
+.ChatFindPageLink{color:#336666;font:10pt arial;text-decoration:underline;}
+
+.horbar{color:#ffffff;font:9pt arial;text-decoration:none;font-weight:bold;}
+A.horbar:hover{color:#ff9933;}
+
+.horbar1{color:#003333;font:9pt arial;text-decoration:none;font-weight:bold;}
+A.horbar1:hover{color:#ff9933;}
+
+.ga{color:#336666;font:9pt arial;font-weight:bold;text-decoration:none;}
+A.ga:hover {color:#ff9933;}
+h3 {color: #669999;}
+.chatRoomNick{color:#000000;font-family:Verdana;font-size:9px;}
+
+.navbar{color:#003333;font:9pt arial;text-decoration:none;}
+A.navbar:hover {color:#ff9933;}
+.relforum{color:#003333;font:8pt arial;font-weight:bold}
+A.relforum:hover {color:#ff9933;}
+
+.navLinkComm{color:#000066;font:11pt arial;font-weight:bold;}
+A.navLinkComm:hover {color:#ffffff;}
+.mainHeadLink{color:#000066;font:11pt arial;font-weight:bold;}
+A.mainHeadLink:hover {color:#ff9933;}
+.header{font:23pt arial;color:#000000}
+.headerSml{font:15pt arial;color:#336666}
+
+
+
+.bsl{font:8pt arial, sans-serif;font-weight:bold;text-decoration:none;color:#666666;}
+A.bsl:hover{color: #FF9933;}
+TD.bsl{cursor:hand;}
+.bql{color: #666666;font:8pt arial, sans-serif;}
+A.bql:hover{color: #FF9933;}
+TD.bql{cursor:hand;}
+.sys{color: #666666;}
+.search{color: #666666;}
+.promo{color: #666666;font:8pt arial, sans-serif;}
+A.msn{color: #666666;font:10pt arial, sans-serif;}
+A.msn:hover{color: #FF9933;}
+A.sys:hover{color: #FF9933;}
+A.promo:hover{color: #FF9933;}
+A.search:hover{color: #FF9933;}
+.nav{color: #993333;font:10pt arial, sans-serif;font-weight:bold;text-decoration:none;}
+A.nav:hover{color: #663300;}
+.tbc {text-align:center;background-color:#666666;cursor:hand;font-family:Arial, helvetica, sans-serif;font-size:8.5pt;color:#ffffff;font-weight:bold;text-decoration:none;}
+.tbo {text-align:center;background-color:#999999;cursor:hand;font-family:Arial, helvetica, sans-serif;font-size:8.5pt;color:#ffffff;font-weight:bold;text-decoration:none;}
+.tbh {text-align:center;background-color:#CCCCCC;cursor:hand;font-family:Arial, helvetica, sans-serif;font-size:8.5pt;color:#333333;font-weight:bold;text-decoration:none;}
+.bbanpromo {color: #000000;font:8pt arial, helvetica, sans-serif;}
+TABLE.toolCell {border-top-style:solid;border-width:1px;border-color:#CCCCFF;}
+TD.toolCell {border-right-style:solid;border-width:1px;border-color:#FFFFFF;}
+A.toolLnk {text-decoration:none;font:x-small arial,sans-serif;font-weight:bold;}
+
+.buttonStyle{font-family:arial;color:#FFFFFF; background-color:#666699;font-size:12;font-weight:bold}
+
+.nickTextSmall{font-family:tahoma,arial;font-size:8pt}
+.nickText{color:#666699;font-family:Tahoma,Arial;font-size:10pt;font-weight:bold}
+.nickTextBig{color:#333366;font-family:tahoma,arial;font-size:10pt;font-weight:bold}
+
+.WMPMarqueeText{color:#000000;font-family:arial;font-size:10pt;font-weight:bold;background-color:#00B2EB}
+
+.chatLogo {color:#000000;text-decoration:none;font-size:21pt;font-weight:bold;}
+.chatLogo:hover {color:#FF3300;text-decoration:underline;font-size:21pt;font-weight:bold;}
