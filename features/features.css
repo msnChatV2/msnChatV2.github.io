@@ -1,0 +1,47 @@
+.welback {color:#FFFFFF; font-size:71%;line-height:150%}
+.livecomment {color:#ffffff;font-size:71%;}
+.livecomment a {color:#ffffff; text-decoration:none; font-weight:bold;}
+.livecomment a:hover {color: #FF3300;}
+.ticker {font-size:71%; color:#ffffff; padding:1px;}
+.featuretitle {color:#ffffcc; font-weight:bold; font-size:120%}
+.featureBackground {background-position:top right; background-repeat:no-repeat;background-image:url(images/quotes.gif)} 
+.dirtitle {font-size:100%}
+.dirtitle a {color:#ff9900; text-decoration:none; font-weight:bold;}
+.dirtitle a:hover {color: #FF3300;}
+.dirblurb {color:#006699; text-decoration:none; font-size:65%;}
+.dirfeaturedlabel {color:#7f7f7f;font-size: 71%;}
+.dirmc {font-size:71%; color:#6699cc; font-weight:bold;}
+.dirmc a {color:#6699cc; text-decoration:none;}
+.dirmc a:hover {color:#FF3300;}
+.dirmclabel {color:#7f7f7f; font-weight: normal;}
+.dirmcorange a {color: #ffcc33; text-decoration:none;}
+.dirmcorange a:hover {color: #FF3300;}
+.dirmcgreen a {color:#336633; text-decoration:none;}
+.dirmcgreen a:hover {color: #FF3300;}
+.dirmcbrown a {color:#cc6633; text-decoration:none;}
+.dirmcbrown a:hover {color: #FF3300;}
+.dirmcpurple a {color:#cc33cc; text-decoration:none;}
+.dirmcpurple a:hover {color: #FF3300;}
+.dircategory {font-size:80%;line-height:150%}
+.dircategory a{color:#6699cc;text-decoration:none; font-weight:bold;}
+.dircategory a:hover {color:#FF3300;}
+.dirsubcategory {font-size:71%}
+.dirsubcategory a {color:#000066;text-decoration:none; font-weight:normal;}
+.dirsubcategory a:hover {color:#FF3300;}
+.dirsubcategorymore {font-size:71%}
+.dirsubcategorymore a {color:#6699cc;text-decoration:none; font-weight:normal;}
+.dirsubcategorymore a:hover {color:#FF3300;}
+.dirpopular {color:#7f7f7f;font-size:65%;}
+.dirpopularcat {background-position:center center;background-repeat:no-repeat;background-image:url(/web/20010615123959im_/http://chat.msn.com/features/images/popular.jpg);}
+.createchattitle {color:#ff9966; font-weight:bold;}
+.promotitle {color:#336699; font-weight:bold;}
+.promotext {color:#000000;font-size:71%;}
+.promotext a {color:#000000;text-decoration:underline;}
+.promotext a:hover {color:#FF3300;}
+.promosubtitle a {color:#336699;font-weight:bold;text-decoration:none;}
+.promosubtitle a:hover {color:#FF3300;}
+.CategoryLinks{font-family:arial; font-size:80%; color:#3A2E9E; font-weight:bold}
+A.CategoryLinks:hover {color:#ff9900;}
+.bodyTextSmallHighlight{background:#FFFFCC;}
+A.bodyTextSmallHighlight:Hover{color:#9999CC;}
+.msnlive {font-face:arial; font-size:80%;}
